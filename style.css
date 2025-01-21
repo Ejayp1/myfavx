@@ -1,71 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage showcasing my favorite things, created as part of a project to learn HTML, CSS, and Git version control.">
+    <title>My Favorites</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: url('https://tenor.com/en-GB/view/actividades-gif-7749368736285322254') repeat-x;
+            background-size: cover;
+            animation: move-bg 10s linear infinite;
+        }
 
-header {
-    background-color: #6200ea;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
+        @keyframes move-bg {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -1000px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Favorites</h1>
+        <p>Discover the things I love and enjoy!</p>
+    </header>
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
+    <main>
+        <section id="favorites">
+            <h2>My Favorite Things</h2>
+            <ul>
+                <li><strong>Book:</strong> "To Kill a Mockingbird" by Harper Lee</li>
+                <li><strong>Movie:</strong> "Inception" directed by Christopher Nolan</li>
+                <li><strong>Music:</strong> "Bohemian Rhapsody" by Queen</li>
+                <li><strong>Hobby:</strong> Painting and sketching</li>
+            </ul>
+        </section>
+    </main>
 
-header p {
-    margin: 0.5rem 0 0;
-    font-size: 1.2rem;
-}
-
-main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #6200ea;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #fff;
-    margin: 0.5rem 0;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer a {
-    color: #ffab40;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+    <footer>
+        <p>Created by [Your Name]. Check out my work on <a href="https://github.com/yourusername" target="_blank">GitHub</a>.</p>
+    </footer>
+</body>
+</html>
