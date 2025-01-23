@@ -30,7 +30,8 @@
 }
 
 .logo {
-    width: 100px;
+    width: 200px;
+    height: 200px;
     cursor: pointer;
 }
 
@@ -79,7 +80,7 @@
     left: 50%; 
     transform: translate(-50%, -50%); 
     text-align: center;
-    color: #0c0c0c;
+    color: #f8f1f1;
 }
 
 .content h1 {
